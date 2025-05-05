@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+.headerlogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #1D1912;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.logo img {
+    width: 125px;
+    height: auto;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    width: 200px;
+    max-width: 100%;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.searchbar button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #D2A63C;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.searchbar button:hover {
+    background-color: #BB8525;
+}
+
+.navbox {
+    background-color: #F3F3E6;
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1D1912;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F3F3E6;
+    background-color: #1D1912;
+    border-radius: 4px;
+}
+
+.formloginsignup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    border-radius: 8px;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-content {
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
+.form-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1D1912;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #BB8525;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #D2A63C;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+.toplogo .mainlogo {
+    width: 100%;
+    height: auto;
+}
+
+
+.contents {
+    align-items: center;
+    height: auto;
+    text-align: center;
+}
+
+
+.contents h1 {
+    text-align: center;
+}
+
+
+
+.divfeatureditems {
+    display: flex;
+    justify-content: space-between;
+}
+
+.featureditem {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.featureditem img {
+    width: 95%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.featureditem:hover {
+    border-radius: 4px;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.featureditem h3 {
+    margin-top: 10px;
+    color: #1D1912;
+}
+
+
+.shop-now-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1D1912;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #BB8525;
+    transform: scale(1.05);
+}
+
+.itemwprice  {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.itemwprice img {
+    width: 95%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.itemwprice h3 {
+    margin-top: 10px;
+    color: #1D1912;
+}
+
+
+
+.add-to-cart, .buy-now {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #1D1912;
+    color: #F3F3E6;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.add-to-cart:hover, .buy-now:hover {
+    background-color: #BB8525;
+}
+
+
+
+
+
+.productmaindescr {
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.322);
+    border-radius: 8px;
+    width: 100%;
+
+}
+
+.mainimgproduct img {
+    width: 95%;
+    border-radius: 4px;
+
+}
+
+.mainimgproduct img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+
+.productmaindescr .mainprocontent {
+    width: 39%;
+}
+
+
+.imgprosmallcontainer {
+    display: flex;
+    width: 105px;
+}
+
+.imgprosmallcontainer img {
+    margin: 5px;
+    border-radius: 4px;
+}
+
+.imgprosmallcontainer img:hover {
+    transform: scale(4.5);
+    transition: 0.3s;
+}
+
+.sizes {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    margin-top: 30px;
+    
+}
+
+.size-option {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #1D1912;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.size-option.active {
+    background-color: #1D1912;
+    color: #F3F3E6;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #1D1912;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+}
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.footercontent {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footercontent h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #F3F3E6;
+}
+
+.footercontent p {
+    font-size: 14;
+    line-height: 1.6;
+}
+
+.footercontent ul {
+    list-style-type: none;
+}
+
+.footercontent ul li {
+    margin: 8px 0;
+}
+
+.footercontent ul li a {
+    color: #F3F3E6;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footercontent ul li a:hover {
+    color: #EECD5C;
+}
+
+.footercontent.socialmedia ul {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia ul li img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.socialmedia ul li img:hover {
+    transform: scale(1.1);
+}
+
+.footerbottom {
+    text-align: center;
+    margin: 30px;
+    font-size: 12px;
+    color: #F3F3E6;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OHHMYSHOPPING</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="headerlogo">
+            <a href="home.html" class="logo">
+                <img src="yellow and black minimalist agency logo.jpg" alt="OHHMYSHOPPING Logo" />
+            </a>
+            <div class="searchbar">
+                <input type="search" placeholder="Search products..." aria-label="Search" />
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbox">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="loginregister.html">LOGIN</a></li>
+                <li><a href="loginregister.html">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="toplogo">
+        <img src="Banner.png" alt="Main banner" class="mainlogo" />
+    </div>
+
+
+
+    <main>
+        <div class="productmaindescr" style="margin-top: 40px;">
+            <div class="mainimgproduct">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/af0805f9-998c-4ae5-b50c-eb9d02a29ea5/AS+W+NSW+TCH+FLC+OS+BLAZER.png" alt="">
+                <div class="imgprosmallcontainer">
+                    <img src="" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7124528-a13c-4958-96cc-17e9c44d73d5/AS+W+NSW+TCH+FLC+OS+BLAZER.png" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/249f6c8c-58da-4888-b366-000c17d297f7/AS+W+NSW+TCH+FLC+OS+BLAZER.png" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/588d3f0f-350c-4b82-b078-b90902457481/AS+W+NSW+TCH+FLC+OS+BLAZER.png" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3da70fea-9b39-4757-a4b3-a8c5a3b78755/AS+W+NSW+TCH+FLC+OS+BLAZER.png" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9cfd4b07-4c00-4362-9118-44fd86f6ee84/AS+W+NSW+TCH+FLC+OS+BLAZER.png" alt="">
+                </div>
+            </div>
+    
+            <div class="mainprocontent" style="margin-top: 10%;">
+                <h1>Nike Tech Fleece</h1>
+                <h3 style="margin-top: 3%; color: gray;">Women's Oversized Blazer</h3>
+                <h3 style="margin-top: 3%;">₱3,525</h3>
+    
+                <div class="sizes">
+                    <div class="size-option" onclick="selectSize(this)">XS</div>
+                    <div class="size-option" onclick="selectSize(this)">S</div>
+                    <div class="size-option" onclick="selectSize(this)">M</div>
+                    <div class="size-option" onclick="selectSize(this)">L</div>
+                    <div class="size-option" onclick="selectSize(this)">XL</div>
+                </div>
+    
+                <div class="button-container" style="margin-top: 5%;">
+                    <button class="add-to-cart" onclick="addToCart('Nike Tech Fleece', 3525)">Add to Cart</button>
+                    <a href="loginregister.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer style="margin-top: 5%;">
+        <div class="footercontainer">
+            <div class="footercontent">
+                <h3>About Us</h3>
+                <p>
+                    As Asia's Online Fashion Destination, we create endless style possibilities
+                    through an ever-expanding range of products from the most coveted international
+                    and local brands, putting you at the center of it all. With OHHMYSHOPPING, You Own Now.
+                </p>
+            </div>
+
+            <div class="footercontent">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="about.html">Contact Us</a></li>
+                    <li><a href="about.html">Shipping Info</a></li>
+                    <li><a href="about.html">Return Policy</a></li>
+                    <li><a href="about.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footercontent socialmedia">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" alt="Facebook" /></a></li>
+                    <li><a href="https://x.com/?lang=en"><img src="https://pbs.twimg.com/profile_images/1683508943228731394/Wyjsoi11_400x400.jpg" alt="X" /></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" /></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="https://www.citypng.com/public/uploads/preview/red-youtube-logo-symbol-701751694792489qxkccchok1.png" alt="YouTube" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>&copy; 2025 Ohhmyshopping. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function selectSize(element) {
+            const sizeOptions = document.querySelectorAll('.size-option');
+            sizeOptions.forEach(option => {
+                option.classList.remove('active');
+            });
+    
+            element.classList.add('active');
+        }
+
+
+
+        function addToCart(productName, price) {
+            alert(productName + " has been added to your cart for ₱" + price);
+        }
+    </script>
+
+</body>
+</html>

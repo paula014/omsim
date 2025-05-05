@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OHHMYSHOPPING</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <header>
+        <div class="headerlogo">
+            <a href="home.html" class="logo">
+                <img src="yellow and black minimalist agency logo.jpg" alt="OHHMYSHOPPING Logo" />
+            </a>
+            <div class="searchbar">
+                <input type="search" placeholder="Search products..." aria-label="Search" />
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="navbox">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="loginregister.html">LOGIN</a></li>
+                <li><a href="loginregister.html">SIGN UP</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="toplogo">
+        <img src="Banner.png" alt="Main banner" class="mainlogo" />
+    </div>
+
+
+
+    <main>
+        <div class="productmaindescr" style="margin-top: 40px;">
+            <div class="mainimgproduct">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/64b7ebbd-aede-4384-915f-97ffd72b4d0f/K+NSW+TEE+EMB+FUTURA+LBR.png" alt="">
+                <div class="imgprosmallcontainer">
+                    <img src="" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1364544b-273e-4719-b370-46f0f4cf7af8/K+NSW+TEE+EMB+FUTURA+LBR.png" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/41b51564-2104-47eb-9e7d-54db102df2b4/K+NSW+TEE+EMB+FUTURA+LBR.png" alt="">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bdef67b1-d6d9-4b82-a87a-7d8b45676732/K+NSW+TEE+EMB+FUTURA+LBR.png" alt="">
+                </div>
+            </div>
+    
+            <div class="mainprocontent" style="margin-top: 10%;">
+                <h1>Nike Sportswear</h1>
+                <h3 style="margin-top: 3%; color: gray;">Big Kids' T-Shirt</h3>
+                <h3 style="margin-top: 3%;">₱1,201</h3>
+    
+                <div class="sizes">
+                    <div class="size-option" onclick="selectSize(this)">XS</div>
+                    <div class="size-option" onclick="selectSize(this)">S</div>
+                    <div class="size-option" onclick="selectSize(this)">M</div>
+                    <div class="size-option" onclick="selectSize(this)">L</div>
+                    <div class="size-option" onclick="selectSize(this)">XL</div>
+                </div>
+    
+                <div class="button-container" style="margin-top: 5%;">
+                    <button class="add-to-cart" onclick="addToCart('Nike Sportswear', 1201)">Add to Cart</button>
+                    <a href="loginregister.html" class="buy-now">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer style="margin-top: 5%;">
+        <div class="footercontainer">
+            <div class="footercontent">
+                <h3>About Us</h3>
+                <p>
+                    As Asia's Online Fashion Destination, we create endless style possibilities
+                    through an ever-expanding range of products from the most coveted international
+                    and local brands, putting you at the center of it all. With OHHMYSHOPPING, You Own Now.
+                </p>
+            </div>
+
+            <div class="footercontent">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="about.html">Contact Us</a></li>
+                    <li><a href="about.html">Shipping Info</a></li>
+                    <li><a href="about.html">Return Policy</a></li>
+                    <li><a href="about.html">FAQs</a></li>
+                </ul>
+            </div>
+
+            <div class="footercontent socialmedia">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="https://z-m-static.xx.fbcdn.net/rsrc.php/v4/yD/r/5D8s-GsHJlJ.png" alt="Facebook" /></a></li>
+                    <li><a href="https://x.com/?lang=en"><img src="https://pbs.twimg.com/profile_images/1683508943228731394/Wyjsoi11_400x400.jpg" alt="X" /></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" /></a></li>
+                    <li><a href="https://www.youtube.com/"><img src="https://www.citypng.com/public/uploads/preview/red-youtube-logo-symbol-701751694792489qxkccchok1.png" alt="YouTube" /></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>&copy; 2025 Ohhmyshopping. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function selectSize(element) {
+            const sizeOptions = document.querySelectorAll('.size-option');
+            sizeOptions.forEach(option => {
+                option.classList.remove('active');
+            });
+    
+            element.classList.add('active');
+        }
+
+
+
+        function addToCart(productName, price) {
+            alert(productName + " has been added to your cart for ₱" + price);
+        }
+    </script>
+
+</body>
+</html>
